@@ -1,0 +1,186 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: century gothic;
+}
+
+body{
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.banner1,.banner2,.banner3,.banner4{
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+img{
+	width: 120%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.banner1{
+	animation: slide1 12s linear infinite;
+}
+.banner2{
+	animation: slide2 12s linear infinite;
+}
+.banner3{
+	animation: slide3 12s linear infinite;
+}
+.banner4{
+	animation: slide4 12s linear infinite;
+}
+@keyframes slide1{
+	0%{
+		visibility: visible;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: visible;
+	}
+}
+@keyframes slide2{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: visible;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: hidden;
+	}
+}
+
+@keyframes slide3{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: visible;
+	}
+	100%{
+		visibility: hidden;
+	}
+}
+@keyframes slide4{
+	0%{
+		visibility: hidden;
+	}
+	25%{
+		visibility: hidden;
+	}
+	50%{
+		visibility: hidden;
+	}
+	75%{
+		visibility: hidden;
+	}
+	100%{
+		visibility: visible;
+	}
+}
+
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);-
+}
+
+.title h1{
+	color: rgb(245, 245, 245, 0.6);
+	font-size: 50px;
+	border:1px solid #594f8d;
+	box-shadow: 5px 5px 0 #594f8d, 12px 12px 2px rgba(0, 0, 0);
+}
+
+.title img{
+	position: relative;
+	left: 50%;
+	width: 180px;
+	height: 180px;
+	border: 3px solid #fff;
+	border-style: double;
+	box-shadow: 5px 5px 0 #594f8d, 12px 12px 2px rgba(0, 0, 0);
+	border-radius: 100px;
+	background: rgb(0, 0, 0, 0.5);
+}
+
+.button{
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #594f8d;
+  border-radius: 0.6em;
+  color: #594f8d;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+.btn:hover, .btn:focus {
+  color: #fff;
+  outline: 0;
+}
+.third {
+  border-color: #594f8d;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #594f8d inset, 0 0 0 0 #594f8d;
+  transition: all 150ms ease-in-out;
+}
+.third:hover {
+  box-shadow: 0 0 10px 0 #594f8d inset, 0 0 10px 4px #594f8d;
+}
